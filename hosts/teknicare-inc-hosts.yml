@@ -1,0 +1,51 @@
+generated: '2026-10-23'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 3
+  own: 3
+  other_domain: 0
+  platform: 0
+  roles:
+  - api
+  - support
+  - website
+hosts:
+- host: api.teknicare.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: teknicare.com
+  role: api
+  relation: own
+- host: support.teknicare.com
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types:
+  - Support
+  serves: []
+  registrable_domain: teknicare.com
+  role: support
+  relation: own
+- host: www.teknicare.com
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - Website
+  serves:
+  - cdn
+  - hosting
+  vendor: cloudflare
+  registrable_domain: teknicare.com
+  role: website
+  relation: own

@@ -1,0 +1,20 @@
+generated: '2026-10-23'
+method: none
+source:
+- https://zapier.com/apps/teknicare-inc/integrations
+- https://zapier.com/apps/teknicare/integrations
+- https://n8n.io/integrations/teknicare-inc/
+- https://n8n.io/integrations/teknicare/
+- https://composio.dev/toolkits/teknicare-inc
+- https://monid.ai/tools/teknicare-inc
+checked:
+- https://composio.dev/toolkits/teknicare-inc
+- https://monid.ai/tools/teknicare-inc
+- https://n8n.io/integrations/teknicare-inc/
+- https://n8n.io/integrations/teknicare/
+- https://zapier.com/apps/teknicare-inc/integrations
+- https://zapier.com/apps/teknicare/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []

@@ -1,0 +1,9 @@
+generated: '2026-10-23'
+method: probed
+source: https://www.teknicare.com/_api/mcp
+
+deployment:
+  mode: remote
+  endpoint: https://www.teknicare.com/_api/mcp
+  auth: none
+  verified: probed

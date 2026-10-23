@@ -1,23 +1,75 @@
 aid: teknicare-inc
+
 name: Teknicare, Inc.
-description: 'Teknicare, Inc. is a company surfaced via the API Evangelist harvest backlog (source: vc-portfolio)
-  and added to the network as a stub for full-pipeline profiling.'
-url: https://raw.githubusercontent.com/api-evangelist/teknicare-inc/refs/heads/main/apis.yml
+
+description: 'Teknicare, Inc. provides remote patient monitoring and chronic disease management solutions, integrating medical devices, data analytics, and telehealth services to enable healthcare providers to monitor patients’ vital signs and health metrics in real time. Their platform supports device connectivity, secure data transmission, and customizable alerts, aiming to improve patient outcomes and reduce hospital readmissions. Founded to bridge gaps in home healthcare, Teknicare leverages cloud infrastructure and compliance with healthcare regulations to deliver scalable, interoperable solutions for clinicians and patients alike.'
+
+image: https://www.teknicare.com/logo.png
+
+url: https://raw.githubusercontent.com/api-evan
+
+website: https://www.teknicare.comgelist/teknicare-inc/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-23 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-23'
+
 modified: '2026-10-23'
+
 tags:
 - Company
-apis: []
+- Healthcare
+- Remote Monitoring
+- Telehealth
+- Data Analytics
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: LLMsTxt
+  url: llms/teknicare-inc-llms.txt
+- type: MCPServer
+  url: mcp/teknicare-inc-mcp.yml
+- type: Hosts
+  url: hosts/teknicare-inc-hosts.yml
+- type: Vendors
+  url: vendors/teknicare-inc-vendors.yml
+- type: Support
+  url: https://support.teknicare.com/
+- type: DomainSecurity
+  url: security/teknicare-inc-domain-security.yml
 - type: Website
   url: https://www.teknicare.com
+
+apis: []
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  method: derived
+  generated: '2026-10-23'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: >-
+    the company publishes no developer documentation host and no machine-readable contract on its own domain
+  evidence:
+  - url: https://www.teknicare.com/mcp
+    status: 403
+  - url: https://www.teknicare.com
+    status: 200
+x-enrichment:
+  date: '2026-10-23'
+  status: enriched
+  artifacts_added: 10
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
